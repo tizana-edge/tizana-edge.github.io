@@ -1,196 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-  <meta charset="UTF-8" />
-  <!-- Meta Standard -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Tizana Edge offers practical trading journals, trade review templates, and resources for futures and prop firm traders." />
-  <meta name="keywords" content="trading journal, trade review, futures trading, prop firm, trading edge" />
-  <meta name="author" content="Tizana Edge Team" />
   <title>Tizana Edge</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
- <style>
-  html { scroll-behavior: smooth; }
-  body {
-    background-color: #FDFDFD; /* Ivory White */
-    color: #3A3A3A; /* Graphite */
-    font-family: 'Inter', sans-serif;
-  }
+  <meta name="description" content="Tizana Edge offers practical trading journals, trade review templates, and resources for futures and prop firm traders." />
+  <meta name="author" content="Tizana Edge Team" />
 
-  header, footer {
-    background-color: #114B5F; /* Dark Teal */
-    color: #FDFDFD;
-  }
-
-  h1, h2, h3, h4 {
-    color: #114B5F;
-  }
-
-  a, .text-accent {
-    color: #CBE896; /* Lime Mist */
-  }
-
-  a:hover, .btn:hover {
-    color: #38A3A5; /* Aqua Blue */
-  }
-
-  .btn {
-    background-color: #CBE896; /* Lime Mist */
-    color: #114B5F;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    font-weight: 600;
-  }
-
-  .btn:hover {
-    background-color: #38A3A5;
-    color: #FDFDFD;
-  }
-</style>
-  <head>
-  <title>Trading Edge | Trade Smarter, Review Sharper</title>
-  
-
-
-  <!-- Open Graph for Facebook / LinkedIn -->
-  <meta property="og:title" content="Trading Edge | Trade Smarter, Review Sharper" />
-  <meta property="og:description" content="Download ready-made PDF trading journals and review templates to improve your performance." />
+  <!-- OG & Twitter -->
+  <meta property="og:title" content="Tizana Edge" />
+  <meta property="og:description" content="Minimal trading tools & resources." />
+  <meta property="og:type" content="website" />
   <meta property="og:image" content="https://tizana-edge.github.io/img/cover.png" />
   <meta property="og:url" content="https://tizana-edge.github.io/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Trading Edge | Trade Smarter, Review Sharper" />
-  <meta name="twitter:description" content="Resources and printable journals for prop firm and futures traders." />
-  <meta name="twitter:image" content="https://tizana-edge.github.io/img/cover.png" />
 
-  <!-- Favicon -->
   <link rel="icon" href="/img/logo.png" type="image/png" />
+
+  <!-- Tailwind, AOS & Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: 	#196f5d;
+      color: #111111;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .section-bg {
+      background-color: #fff;
+    }
+
+    header, footer {
+      background-color: #f9f9f9;
+      color: #111111;
+    }
+
+    h1, h2, h3, h4 {
+      color: #196f5d;
+    }
+
+    a, .text-accent {
+      color: #f8f0ca;
+      text-decoration: underline;
+    }
+
+    a:hover, .btn:hover {
+      color: #444444;
+    }
+
+    .btn {
+      background-color: #f0f0f0;
+      color: #111111;
+      border: 1px solid #ccc;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .icon-black { color: #111111; }
+  </style>
 </head>
 
-</head>
 <body class="font-sans">
 
   <!-- Navbar -->
-  <nav class="fixed top-0 w-full bg-[#1E293B] bg-opacity-90 z-50 shadow-md">
+  <nav class="fixed top-0 w-full bg-white border-b border-gray-200 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-xl font-bold coral">Tizana Edge</h1>
-      <div class="hidden md:flex space-x-6 text-white text-sm uppercase font-semibold">
-        <a href="#about" class="hover:text-coral">About</a>
-        <a href="#resources" class="hover:text-coral">Resources</a>
-        <a href="#notion" class="hover:text-coral">Notion Notes</a>
-        <a href="#contact" class="hover:text-coral">Contact</a>
+      <h1 class="text-xl font-bold">Tizana Edge</h1>
+      <div class="hidden md:flex space-x-6 text-sm uppercase font-semibold">
+        <a href="#about">About</a>
+        <a href="#resources">Resources</a>
+        <a href="#notion">Notion Notes</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="h-screen bg-cover bg-center relative" style="background-image: url('https://source.unsplash.com/1600x900/?trading,focus');">
-  <div class="absolute inset-0 bg-[#1E293B]/80 backdrop-blur-sm"></div>
-  <div class="relative z-10 h-full flex items-center justify-center">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
-      <!-- Left: Text Content -->
-      <div class="text-left flex flex-col justify-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-[#FB7185] leading-tight">
-          Build Your Edge.  
-          <br />
-          Document What Matters.
+  <!-- Hero -->
+  <header class="h-screen bg-cover bg-center relative" style="background-image: url('https://source.unsplash.com/1600x900/?minimal,workspace');">
+    <div class="absolute inset-0 bg-white bg-opacity-80 backdrop-blur-sm"></div>
+    <div class="relative z-10 h-full flex items-center justify-center">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Build With Clarity.<br />Document What Matters.
         </h1>
-        <p class="text-slate-200 text-lg mb-6">
-          Tools, journals, and systems to help traders grow with intention.
-        </p>
-        <div class="flex gap-4">
-          <a href="#resources" class="bg-[#f8f0ca] text-[#1E293B] px-6 py-3 rounded-lg font-semibold hover:bg-yellow-200 transition">
-            Explore Resources
-          </a>
-          <a href="#about" class="text-[#f8f0ca] underline hover:text-yellow-100">
-            Learn More
-          </a>
+        <p class="text-lg mb-6">A minimal workspace for traders and thinkers.</p>
+        <div class="flex justify-center gap-4">
+          <a href="#resources" class="btn">Explore Resources</a>
+          <a href="#about" class="btn">Learn More</a>
         </div>
       </div>
-
-      <!-- Right: Optional Image/Mockup -->
-      <div class="hidden md:block" data-aos="fade-left">
-        <img src="/img/hero-mockup.png" alt="Trading journal mockup" class="rounded-xl shadow-xl max-w-full" />
-      </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <!-- About -->
-  <section id="about" class="py-20 bg-[#334155]">
+  <section id="about" class="py-20 section-bg">
     <div class="max-w-5xl mx-auto text-center px-6" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-4 flex justify-center items-center gap-2">
-        <i data-lucide="user-circle" class="coral"></i> About
+        <i data-lucide="user-circle" class="icon-black"></i> About
       </h2>
-      <p class="text-slate-200 leading-relaxed">
-       Tizana Edge is built by traders, for traders. 
-We believe in the power of structured learning and documentation. From printable journals to Notion databases, every tool shared here is battle-tested in real market conditions.
-
-This site serves as a quiet space for clarity — to build a stronger trading mindset, track real progress, and grow intentionally.
-
-We don't chase noise. We document the edge.
-
+      <p class="leading-relaxed">
+        Tizana Edge is designed to help traders grow with intention through structure and simplicity.
+        We believe in the power of documentation. Every tool here is practical, printable, and built for clarity.
       </p>
     </div>
   </section>
 
   <!-- Resources -->
-  <section id="resources" class="py-20 bg-[#1E293B]">
-    <div class="max-w-5xl mx-auto px-6 text-center" data-aos="fade-up">
+  <section id="resources" class="py-20 section-bg">
+    <div class="max-w-5xl mx-auto text-center px-6" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-12 flex justify-center items-center gap-2">
-        <i data-lucide="archive" class="coral"></i> Resources
+        <i data-lucide="archive" class="icon-black"></i> Resources
       </h2>
-      <div class="grid md:grid-cols-3 gap-8 text-slate-200">
-        <div class="border border-coral p-6 rounded-lg hover:bg-[#334155] transition duration-300" data-aos="zoom-in">
-          <h3 class="text-xl font-bold mb-2 flex items-center justify-center gap-2 coral"><i data-lucide="file-text"></i> Journal</h3>
-          <p>Track setups, results & reflections in Notion.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="border border-gray-300 p-6 rounded-lg hover:bg-gray-50 transition duration-300">
+          <h3 class="text-xl font-bold mb-2">Journal</h3>
+          <p>Track your setups, execution, and outcomes.</p>
         </div>
-        <div class="border border-coral p-6 rounded-lg hover:bg-[#334155] transition duration-300" data-aos="zoom-in" data-aos-delay="100">
-          <h3 class="text-xl font-bold mb-2 flex items-center justify-center gap-2 coral"><i data-lucide="book-open"></i> Playbook</h3>
-          <p>Rules, routines & plans to stay consistent.</p>
+        <div class="border border-gray-300 p-6 rounded-lg hover:bg-gray-50 transition duration-300">
+          <h3 class="text-xl font-bold mb-2">Playbook</h3>
+          <p>Define your strategy, rules, and risk structure.</p>
         </div>
-        <div class="border border-coral p-6 rounded-lg hover:bg-[#334155] transition duration-300" data-aos="zoom-in" data-aos-delay="200">
-          <h3 class="text-xl font-bold mb-2 flex items-center justify-center gap-2 coral"><i data-lucide="settings"></i> Tools</h3>
-          <p>Checklists, screeners & trackers for smarter trading.</p>
+        <div class="border border-gray-300 p-6 rounded-lg hover:bg-gray-50 transition duration-300">
+          <h3 class="text-xl font-bold mb-2">Tools</h3>
+          <p>Use checklists and templates to stay consistent.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Notion Notes -->
-  <section id="notion" class="py-20 bg-[#334155]">
+  <section id="notion" class="py-20 bg-gray-100">
     <div class="max-w-5xl mx-auto px-6 text-center" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-6 flex justify-center items-center gap-2">
-        <i data-lucide="notebook-text" class="coral"></i> Notes from Notion
+        <i data-lucide="notebook-text" class="icon-black"></i> Notes from Notion
       </h2>
-      <div class="space-y-4 text-slate-200">
-        <p><strong>•</strong> Daily logs with tag filters: #setup #review #lesson</p>
-        <p><strong>•</strong> Reflections embedded inside each trade note</p>
-        <p><strong>•</strong> Linked databases: setups ↔ results ↔ habits</p>
+      <div class="space-y-4">
+        <p><strong>•</strong> Daily logs with #setup and #review filters</p>
+        <p><strong>•</strong> Reflection sections embedded in each trade</p>
+        <p><strong>•</strong> Connected databases: strategy ↔ results ↔ behavior</p>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-20 bg-[#1E293B]">
+  <section id="contact" class="py-20 section-bg">
     <div class="max-w-4xl mx-auto text-center px-6" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-4 flex justify-center items-center gap-2">
-        <i data-lucide="mail" class="coral"></i> Let’s Connect
+        <i data-lucide="mail" class="icon-black"></i> Contact
       </h2>
-      <p class="text-slate-200">Email: <a href="mailto:hello@tizanaedge.com" class="underline text-coral hover:text-pink-400">hello@tizanaedge.com</a></p>
+      <p>Email us at: <a href="mailto:hello@tizanaedge.com">hello@tizanaedge.com</a></p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-6 bg-[#0f172a] text-slate-300">
+  <footer class="text-center py-6 bg-[#f9f9f9] text-[#111]">
     &copy; 2025 Tizana Edge. All rights reserved.
   </footer>
 
