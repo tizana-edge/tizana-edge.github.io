@@ -59,12 +59,37 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="h-screen flex items-center justify-center text-center bg-cover bg-center relative" style="background-image: url('https://source.unsplash.com/1600x900/?ocean,focus');">
-    <div class="bg-[#1E293B] bg-opacity-80 p-10 rounded-xl" data-aos="zoom-in">
-      <h2 class="text-4xl md:text-6xl font-bold mb-4 coral">Welcome to Tizana Edge</h2>
-      <p class="text-lg md:text-xl text-slate-200">Build your trading brain. Document what matters.</p>
+  <header class="h-screen bg-cover bg-center relative" style="background-image: url('https://source.unsplash.com/1600x900/?trading,focus');">
+  <div class="absolute inset-0 bg-[#1E293B]/80 backdrop-blur-sm"></div>
+  <div class="relative z-10 h-full flex items-center justify-center">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
+      <!-- Left: Text Content -->
+      <div class="text-left flex flex-col justify-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-[#f8f0ca] leading-tight">
+          Build Your Edge.  
+          <br />
+          Document What Matters.
+        </h1>
+        <p class="text-slate-200 text-lg mb-6">
+          Tools, journals, and systems to help traders grow with intention.
+        </p>
+        <div class="flex gap-4">
+          <a href="#resources" class="bg-[#f8f0ca] text-[#1E293B] px-6 py-3 rounded-lg font-semibold hover:bg-yellow-200 transition">
+            Explore Resources
+          </a>
+          <a href="#about" class="text-[#f8f0ca] underline hover:text-yellow-100">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Optional Image/Mockup -->
+      <div class="hidden md:block" data-aos="fade-left">
+        <img src="/img/hero-mockup.png" alt="Trading journal mockup" class="rounded-xl shadow-xl max-w-full" />
+      </div>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- About -->
   <section id="about" class="py-20 bg-[#334155]">
